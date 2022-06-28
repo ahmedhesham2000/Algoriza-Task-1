@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TButton extends StatelessWidget {
   final String text;
-  final Function function;
+  final VoidCallback function;
   const TButton({
     Key? key,
     required this.text,
@@ -11,8 +11,6 @@ class TButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(onPressed: (){
-      function;
-    }, child: Text(text));
+    return TextButton(onPressed:function, child: Text(text));
   }
 }

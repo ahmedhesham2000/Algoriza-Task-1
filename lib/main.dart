@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_1/Screens/login.dart';
 import 'package:task_1/Screens/onBoard.dart';
+import 'package:task_1/Screens/signUp.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         OnBoard.routName:(BuildContext)=>OnBoard(),
         Login.routName:(BuildContext)=>Login(),
+        SignUp.routName:(BuildContext)=>SignUp(),
       },
       initialRoute: OnBoard.routName,
     );

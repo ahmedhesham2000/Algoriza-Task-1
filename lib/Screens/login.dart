@@ -2,6 +2,7 @@ import 'package:country_list_pick/country_list_pick.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:task_1/Screens/signUp.dart';
 import 'package:task_1/widgits/OutLinedButton.dart';
 import 'package:task_1/widgits/TButton.dart';
 import 'package:task_1/widgits/button.dart';
@@ -143,7 +144,9 @@ class _LoginState extends State<Login> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('Dont has any account?',style: TextStyle(color: Colors.purple),),
-                          TButton(text: 'Register here', function: (){})
+                          TButton(text: 'Register here', function: (){
+                            Navigator.pushNamed(context, SignUp.routName);
+                          })
                         ],
                       )
                     ],
